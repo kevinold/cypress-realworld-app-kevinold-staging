@@ -33,7 +33,7 @@ describe("Notifications", function () {
 
       cy.database("find", "transactions", { senderId: ctx.userB.id }).then(
         (transaction: Transaction) => {
-          cy.visit(`/transaction/${transaction.id}`);
+          cy.visit(`/transaction/${transaction.id}1`);
         }
       );
 
